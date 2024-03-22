@@ -1,0 +1,90 @@
+
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap')
+
+// resets
+*
+	box-sizing: border-box
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-kerning: auto
+
+html
+	font-family: sans-serif
+	-webkit-text-size-adjust: 100%
+
+body
+	margin: 0
+	font-family: "Inter Tight", sans-serif
+	font-optical-sizing: auto
+	font-weight: 400
+	letter-spacing: .05em
+	font-style: normal
+
+// typography
+
+
+// color variables
+$white: #ffffff
+$offwhite: #f5f5f5
+$black: #111111
+$red: #AA4B39
+$green: #84b082
+
+body
+	background-color: $offwhite
+
+img
+	max-width: 100%
+
+.full-width
+	display: block
+	width: 100%
+	max-width: 1072px
+	//padding: 8.5rem
+	border-radius: 32px
+	background-color: $white
+	p
+		max-width: 100%
+	img 
+		border-radius: 32px 32px 0 0
+
+.black-box
+	border: 2px solid $black
+	background-color: $white
+	max-width: 16rem
+	padding: 1.5rem
+	p
+		font-size: 1.125rem
+		margin: 0
+
+main
+	display: block
+	width: 100%
+	max-width: 1072px
+	margin: 4rem auto 0
+	background-color: $white
+	border-radius: 32px
+	&#moo
+		padding: 8.5rem
+	p
+		display: block
+		font-size: 1.75rem
+		width: 100%
+		max-width: 800px
+		line-height: 1.25em
+		margin-top: 5rem
+	.logo
+		width: 100%
+		max-width: 7rem
+		height: 7rem
+		background-color:$white
+		border: 2px solid $black
+		border-radius: 50%
+
+footer 
+	width: 100%
+	position: fixed
+	bottom: 1rem
+	text-align: center
