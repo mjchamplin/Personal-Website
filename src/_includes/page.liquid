@@ -12,8 +12,8 @@ tags:
   <title>{{ title }}</title>
 </head>
 <body>
-  <main class="full-width">
-    {{ content | safe }}
+  <main class="full-width {{ title }}">
+    {{ content }}
   </main>
   <footer>      
     <small>{{ site.author }} &copy; {{ site.copyrightYear }}</small>
