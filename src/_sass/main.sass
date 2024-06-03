@@ -1,7 +1,8 @@
 
 // Imports
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap')
-
+// @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap')
 // resets
 *
 	box-sizing: border-box
@@ -14,15 +15,16 @@ html
 	font-family: sans-serif
 	-webkit-text-size-adjust: 100%
 
+p:empty 
+	display: none
+
 body
 	margin: 0
-	font-family: "Inter Tight", sans-serif
-	font-optical-sizing: auto
-	font-weight: 400
-	letter-spacing: .05em
-	font-style: normal
 
 // typography
+
+$sans: "Source Sans 3", sans-serif
+$serif: "Source Serif 4", serif
 h1
 	font-size: 2rem
 
@@ -31,6 +33,17 @@ small
 
 a
 	transition: color 300ms
+
+body
+	font-family: "Source Serif 4", serif
+	font-optical-sizing: auto
+	font-weight: 400
+	font-style: normal
+
+.pre 
+	font-family: monospace
+	background-color: #eee
+	display: inline
 
 // color variables
 $white: #ffffff
@@ -45,18 +58,6 @@ body
 img
 	max-width: 100%
 
-.full-width
-	display: block
-	width: 100%
-	max-width: 1072px
-	//padding: 8.5rem
-	border-radius: 32px
-	background-color: $white
-	p
-		max-width: 100%
-	img 
-		border-radius: 32px 32px 0 0
-
 .black-box
 	border: 2px solid $black
 	background-color: $white
@@ -69,15 +70,13 @@ img
 main
 	display: block
 	width: 100%
-	max-width: 1072px
-	margin: 4rem auto 0
+	margin: 0 auto
 	background-color: $white
-	border-radius: 32px
 	&#moo
-		padding: 8.5rem
+		padding: 11.5rem 0
 	p
 		display: block
-		font-size: 1.75rem
+		font-size: 1.25rem
 		width: 100%
 		max-width: 800px
 		line-height: 1.25em
@@ -102,3 +101,49 @@ footer
 			color: $green
 			text-decoration: underline
 
+
+
+// Staging
+
+.archive
+	p
+		padding: 0
+		margin: .4rem 0
+		font-size: 1rem
+
+.notags
+	font-style: italic
+
+.archive-list-item
+	margin: 0 0 1rem
+	list-style-type: none
+
+.full-width
+	display: grid
+	grid-template-columns: repeat(8, 112px)
+	gap: 0px 32px
+	grid-auto-flow: row
+	width: 1184px
+
+#header
+	grid-column: 2 / -1
+	#wordmark
+		font-family: $sans
+		font-size: 1.25rem
+		text-transform: uppercase
+		letter-spacing: .08em
+
+#intro
+	grid-column: 2 / 6
+	font-family: $serif
+	font-weight: 300
+	font-size: 2.25rem
+	line-height: 1.16em
+	//width: 100%
+	//max-width: 544px
+
+.slug
+	width: 100%
+	background-color: red 
+	grid-column: 2 / -1
+	min-height: 100px
