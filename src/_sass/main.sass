@@ -53,7 +53,7 @@ $red: #AA4B39
 $green: #84b082
 
 body
-	background-color: $offwhite
+	background-color: $white
 
 img
 	max-width: 100%
@@ -120,19 +120,13 @@ footer
 	list-style-type: none
 
 .full-width
-	display: grid
-	grid-template-columns: repeat(8, 112px)
-	gap: 0px 32px
-	grid-auto-flow: row
-	width: 1184px
-
-#header
-	grid-column: 2 / -1
-	#wordmark
-		font-family: $sans
-		font-size: 1.25rem
-		text-transform: uppercase
-		letter-spacing: .08em
+	width: 100%
+	max-width: 1120px
+	@media only screen and (min-width: 1200px)
+		display: grid
+		grid-template-columns: repeat(8, 112px)
+		gap: 7.5rem 32px
+		grid-auto-flow: row
 
 #intro
 	grid-column: 2 / 6
@@ -151,4 +145,64 @@ footer
 
 .grid-item-5
 	width: 100%
-	grid-column: 2 / 7
+	grid-column-end: span 5
+	// grid-column: 1 / 6
+
+.grid-item-3
+	width: 100%
+	grid-column-end: span 3
+	// grid-column: 6 / 9 
+	// Make this dynamic, obvs
+
+.work
+	.portfolio-card
+		p
+			font-size: 1rem
+			margin: 1rem 0 0
+			line-height: 1.5em
+
+.grid-offset-2
+	grid-column-start: 2
+
+.grid-offset-3
+	grid-column-start: 3
+
+.grid-spacer-1
+	grid-column-end: span 1
+
+#header
+	grid-column: 2 / -1
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	#wordmark
+		display: inline
+		grid-column-end: span 1
+		place-content: center
+
+#top-navigation
+	grid-column-end: span 1
+	place-content: center
+	ul 
+		list-style-type: none
+		float: right
+		li
+			display: inline
+			margin-left: 1em
+
+// Separating out type styles
+
+#header
+	font-family: $sans
+	text-transform: uppercase 
+	letter-spacing: .08em
+	#wordmark
+		font-size: 1.25rem
+	#top-navigation
+		font-weight: 500
+		li.active
+			font-weight: 600
+	a
+		text-decoration: none
+		color: inherit
+	a:hover
+		color: $red

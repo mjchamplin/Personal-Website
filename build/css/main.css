@@ -47,7 +47,7 @@ body {
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 img {
@@ -125,21 +125,16 @@ footer a:hover {
 }
 
 .full-width {
-  display: grid;
-  grid-template-columns: repeat(8, 112px);
-  gap: 0px 32px;
-  grid-auto-flow: row;
-  width: 1184px;
+  width: 100%;
+  max-width: 1120px;
 }
-
-#header {
-  grid-column: 2/-1;
-}
-#header #wordmark {
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+@media only screen and (min-width: 1200px) {
+  .full-width {
+    display: grid;
+    grid-template-columns: repeat(8, 112px);
+    gap: 7.5rem 32px;
+    grid-auto-flow: row;
+  }
 }
 
 #intro {
@@ -159,7 +154,76 @@ footer a:hover {
 
 .grid-item-5 {
   width: 100%;
-  grid-column: 2/7;
+  grid-column-end: span 5;
+}
+
+.grid-item-3 {
+  width: 100%;
+  grid-column-end: span 3;
+}
+
+.work .portfolio-card p {
+  font-size: 1rem;
+  margin: 1rem 0 0;
+  line-height: 1.5em;
+}
+
+.grid-offset-2 {
+  grid-column-start: 2;
+}
+
+.grid-offset-3 {
+  grid-column-start: 3;
+}
+
+.grid-spacer-1 {
+  grid-column-end: span 1;
+}
+
+#header {
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#header #wordmark {
+  display: inline;
+  grid-column-end: span 1;
+  place-content: center;
+}
+
+#top-navigation {
+  grid-column-end: span 1;
+  place-content: center;
+}
+#top-navigation ul {
+  list-style-type: none;
+  float: right;
+}
+#top-navigation ul li {
+  display: inline;
+  margin-left: 1em;
+}
+
+#header {
+  font-family: "Source Sans 3", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+#header #wordmark {
+  font-size: 1.25rem;
+}
+#header #top-navigation {
+  font-weight: 500;
+}
+#header #top-navigation li.active {
+  font-weight: 600;
+}
+#header a {
+  text-decoration: none;
+  color: inherit;
+}
+#header a:hover {
+  color: #AA4B39;
 }
 
 /*# sourceMappingURL=main.css.map */

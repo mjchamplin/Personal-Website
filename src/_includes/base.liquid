@@ -12,8 +12,16 @@ title: My default title
 <body>
   <main id="moo" class="full-width {{ title | downcase }}">
     <header id="header">
-      <div id="wordmark">Michael Champlin</div>
+      <div id="wordmark"><a href="/">Michael Champlin</a></div>
+      <nav id="top-navigation">
+        <ul>
+          <li class="active"><a href="/work">Work</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/resume">Resume</a></li>
+        </ul>
+      </nav>
     </header>
+
     <!-- <div class="logo"></div> -->
       {{ content }}
   </main>
