@@ -10,21 +10,22 @@ title: My default title
   <title>{{ title }}</title>
 </head>
 <body>
-  <main id="moo" class="full-width {{ title | downcase }}">
+  <main id="moo" class="full-width {{ slug | downcase }}">
     <header id="header">
       <div id="wordmark"><a href="/">Michael Champlin</a></div>
       <nav id="top-navigation">
+        {% assign navPages = collections.all | eleventyNavigation %}
         <ul>
-          <li class="active"><a href="/work">Work</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/resume">Resume</a></li>
+        {%- for entry in navPages %}
+          <li{% if entry.url == page.url %} class="nav-item-active"{% endif %}>
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
         </ul>
       </nav>
     </header>
     {{ content }}
   </main>
-  <footer>
-    <small>A website by {{ site.author }} - &copy; {{ site.copyrightYear }} - <a href="#">colophon</a></small>
-  </footer>
+  {% include 'footer' %}
 </body>
 </html>
