@@ -29,5 +29,4 @@ eleventyNavigation:
   </li>
 {%- endfor -%}
 </ul>
-{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
 </div>
