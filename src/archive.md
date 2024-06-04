@@ -2,6 +2,8 @@
 layout: base
 title: testing an archive page
 description: Testing how to display various kinds of content
+eleventyNavigation:
+  key: Archive
 ---
 <div class="archive">
 <ul>
@@ -27,4 +29,5 @@ description: Testing how to display various kinds of content
   </li>
 {%- endfor -%}
 </ul>
+{{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
 </div>

@@ -1,6 +1,8 @@
 ---
 layout: base
 title: god damn I love turtles
+eleventyNavigation:
+  key: Home
 ---
 
 

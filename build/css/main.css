@@ -180,6 +180,14 @@ footer a:hover {
   grid-column-end: span 1;
 }
 
+.grid-align-bottom {
+  align-self: end;
+}
+
+.grid-align-middle {
+  align-self: center;
+}
+
 #header {
   grid-column: 2/-1;
   display: grid;
