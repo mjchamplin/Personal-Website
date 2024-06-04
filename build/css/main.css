@@ -22,7 +22,9 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin: 0 0 1em;
 }
 
 small {
@@ -46,23 +48,22 @@ body {
   display: inline;
 }
 
+.centered {
+  text-align: center;
+}
+
+.big-p {
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 1.16em;
+}
+
 body {
   background-color: #ffffff;
 }
 
 img {
   max-width: 100%;
-}
-
-.black-box {
-  border: 2px solid #111111;
-  background-color: #ffffff;
-  max-width: 16rem;
-  padding: 1.5rem;
-}
-.black-box p {
-  font-size: 1.125rem;
-  margin: 0;
 }
 
 main {
@@ -72,15 +73,15 @@ main {
   background-color: #ffffff;
 }
 main#moo {
-  padding: 11.5rem 0;
+  padding: 8rem 0;
 }
 main p {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   width: 100%;
   max-width: 800px;
-  line-height: 1.25em;
-  margin-top: 5rem;
+  line-height: 1.6em;
+  margin-top: 2rem;
 }
 main .logo {
   width: 100%;
@@ -93,8 +94,7 @@ main .logo {
 
 footer {
   width: 100%;
-  position: fixed;
-  bottom: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 footer a {
@@ -106,10 +106,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.archive {
+.archive, .wide {
   grid-column: 2/-1;
 }
-.archive p {
+.archive p, .wide p {
   padding: 0;
   margin: 0.4rem 0;
   font-size: 1rem;
@@ -127,34 +127,40 @@ footer a:hover {
 .full-width {
   width: 100%;
   max-width: 1120px;
+  min-height: 80vh;
 }
 @media only screen and (min-width: 1200px) {
   .full-width {
     display: grid;
     grid-template-columns: repeat(8, 112px);
+    align-content: start;
     gap: 7.5rem 32px;
     grid-auto-flow: row;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .full-width.home {
+    gap: 0 32px;
+  }
+}
 
 #intro {
-  grid-column: 2/6;
   font-family: "Source Serif 4", serif;
+  margin-top: 4rem;
+}
+#intro p {
   font-weight: 300;
   font-size: 2.25rem;
   line-height: 1.16em;
 }
 
-.slug {
-  width: 100%;
-  background-color: red;
-  grid-column: 2/-1;
-  min-height: 100px;
-}
-
 .grid-item-5 {
   width: 100%;
   grid-column-end: span 5;
+}
+
+.grid-item-4 {
+  grid-column-end: span 4;
 }
 
 .grid-item-3 {
@@ -166,6 +172,10 @@ footer a:hover {
   font-size: 1rem;
   margin: 1rem 0 0;
   line-height: 1.5em;
+}
+
+.grid-offset-1 {
+  grid-column-start: 1;
 }
 
 .grid-offset-2 {
@@ -209,7 +219,13 @@ footer a:hover {
 }
 #top-navigation ul li {
   display: inline;
-  margin-left: 1em;
+  margin-left: 1.5em;
+}
+
+.rule {
+  height: 1px;
+  border-bottom: 1px solid #111111;
+  margin: 5rem 0;
 }
 
 #header {
@@ -223,7 +239,7 @@ footer a:hover {
 #header #top-navigation {
   font-weight: 500;
 }
-#header #top-navigation li.active {
+#header #top-navigation li.nav-item-active {
   font-weight: 600;
 }
 #header a {
