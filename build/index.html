@@ -1,46 +1,75 @@
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="/css/main.css">
-  <title>Michael Champlin</title>
+  <title>Home</title>
 </head>
 <body>
   <main id="moo" class="full-width home">
-    <header id="header">
+        <header id="header">
       <div id="wordmark"><a href="/">Michael Champlin</a></div>
-      <nav id="top-navigation">
-        
-        <ul>
-          <li>
-            <a href="/about/">About</a>
-          </li>
-          <li>
-            <a href="/archive/">Archive</a>
-          </li>
-          <li class="nav-item-active">
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/work/">Work</a>
-          </li>
-        </ul>
+      <!-- Top Navigation, move to include -->
+      <nav role="navigation" id="top-navigation">
+        <div id="menu-toggle">
+          <input type="checkbox" id="hamburger" />
+          <label id="stack" for="hamburger">&#9776;</label>
+          
+          <ul id="top-navigation-list">
+            <li>
+              <a href="/work/">Work</a>
+            </li>
+            <li>
+              <a href="/about/">About</a>
+            </li>
+            <li>
+              <a href="/resume/">Resumé</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section id="intro" class="grid-item-4 grid-offset-2">
   <p>I’m a multi-disciplinary designer in Texas. Most recently, I’ve worked in product design consulting, and I’m interested in helping brands and causes tell stories using design and technology. I’ve worked in both research and design execution for over fifteen years.</p>
 </section>
-<div class="rule grid-item-5 grid-offset-1"></div>
+<div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
 <section class="grid-item-4 grid-offset-2">
   <h1>What I’m Looking For</h1>
   <p>Vestibulum tempus imperdiet sem ac porttitor. Vivamus pulvinar commodo orci, suscipit porttitor velit elementum non. Fusce nec pellentesque erat, id lobortis nunc. Donec dui leo, ultrices quis turpis nec, sollicitudin sodales tortor. Aenean dapibus magna quam, id tincidunt quam placerat consequat.</p>
   <p>Nulla eu laoreet ex. Vestibulum nec vulputate turpis, id euismod orci. Phasellus consectetur tortor est. Donec lectus ex, rhoncus ac consequat at, viverra sit amet sem. Aliquam sed vestibulum nibh.  Praesent non ex congue, tristique risus quis, blandit purus. Sed tristique sapien ut vehicula pretium. Donec purus metus, vulputate sit amet ullamcorper vel, aliquet ac lectus? </p>
 </section>
-  </main>
-  <footer>
-  <small>A website by Michael Champlin - &copy; 2024 - <a href="/colophon">colophon</a></small>
+    <footer class="grid-item-5">
+  <div>
+    <h2>Information</h2>
+    <ul class="footer-list"><li class="footer-list-item">
+        <a href="/work/">Work</a>
+      </li><li class="footer-list-item">
+        <a href="/about/">About</a>
+      </li><li class="footer-list-item">
+        <a href="/archive/">Archive</a>
+      </li><li class="footer-list-item">
+        <a href="/cases/apple/">A Project about Apples</a>
+      </li><li class="footer-list-item">
+        <a href="/resume/">Resumé</a>
+      </li><li class="footer-list-item">
+        <a href="/tags/all/">My default title</a>
+      </li><li class="footer-list-item">
+        <a href="/">Home</a>
+      </li></ul>
+  </div>
+  <div>
+    <h2>Elsewhere</h2>
+    <ul class="footer-list">
+      <li class="footer-list-item">Instagram</li>
+      <li class="footer-list-item">LinkedIn</li>
+      <li class="footer-list-item">GitHub</li>
+    </ul>
+  </div>
 </footer>
-
+<div class="grid-wide copyright">
+  <small>A website by Michael Champlin - &copy; 2024 - <a href="/colophon">colophon</a></small>
+</div>
+  </main>
 </body>
 </html>

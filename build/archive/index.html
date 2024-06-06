@@ -1,37 +1,45 @@
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="/css/main.css">
-  <title>testing an archive page</title>
+  <title>Archive</title>
 </head>
 <body>
   <main id="moo" class="full-width ">
-    <header id="header">
+        <header id="header">
       <div id="wordmark"><a href="/">Michael Champlin</a></div>
-      <nav id="top-navigation">
-        
-        <ul>
-          <li>
-            <a href="/about/">About</a>
-          </li>
-          <li class="nav-item-active">
-            <a href="/archive/">Archive</a>
-          </li>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/work/">Work</a>
-          </li>
-        </ul>
+      <!-- Top Navigation, move to include -->
+      <nav role="navigation" id="top-navigation">
+        <div id="menu-toggle">
+          <input type="checkbox" id="hamburger" />
+          <label id="stack" for="hamburger">&#9776;</label>
+          
+          <ul id="top-navigation-list">
+            <li>
+              <a href="/work/">Work</a>
+            </li>
+            <li>
+              <a href="/about/">About</a>
+            </li>
+            <li>
+              <a href="/resume/">Resumé</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <div class="archive">
+    <div class="grid-wide">
 <ul><li class="archive-list-item">
+        <a href="/work/"><code>/work/</code></a>
+<p>Work I'm proud of</p>
+<p><ul><li class="notags">
+No tags
+</li></ul></p>
+  </li><li class="archive-list-item">
         <a href="/about/"><code>/about/</code></a>
-<p>About me, etc</p>
+<p>About Michael, etc</p>
 <p><ul><li class="notags">
 No tags
 </li></ul></p>
@@ -42,29 +50,66 @@ No tags
 No tags
 </li></ul></p>
   </li><li class="archive-list-item">
-        <a href="/"><code>/</code></a>
+        <a href="/cases/apple/"><code>/cases/apple/</code></a>
+<p><p><em>No description</em></p></p>
+<p><ul><li class="tag">
+UX
+</li><li class="tag">
+Research
+</li><li class="tag">
+Presentation
+</li></ul></p>
+  </li><li class="archive-list-item">
+        <a href="/resume/"><code>/resume/</code></a>
 <p><p><em>No description</em></p></p>
 <p><ul><li class="notags">
 No tags
 </li></ul></p>
   </li><li class="archive-list-item">
-        <a href="/work/"><code>/work/</code></a>
-<p>Work I'm proud of</p>
+        <a href="/tags/all/"><code>/tags/all/</code></a>
+<p><p><em>No description</em></p></p>
 <p><ul><li class="notags">
 No tags
 </li></ul></p>
   </li><li class="archive-list-item">
-        <a href="/404.html"><code>/404.html</code></a>
+        <a href="/"><code>/</code></a>
 <p><p><em>No description</em></p></p>
 <p><ul><li class="notags">
 No tags
 </li></ul></p>
   </li></ul>
 </div>
-  </main>
-  <footer>
-  <small>A website by Michael Champlin - &copy; 2024 - <a href="/colophon">colophon</a></small>
+    <footer class="grid-item-5">
+  <div>
+    <h2>Information</h2>
+    <ul class="footer-list"><li class="footer-list-item">
+        <a href="/work/">Work</a>
+      </li><li class="footer-list-item">
+        <a href="/about/">About</a>
+      </li><li class="footer-list-item">
+        <a href="/archive/">Archive</a>
+      </li><li class="footer-list-item">
+        <a href="/cases/apple/">A Project about Apples</a>
+      </li><li class="footer-list-item">
+        <a href="/resume/">Resumé</a>
+      </li><li class="footer-list-item">
+        <a href="/tags/all/">My default title</a>
+      </li><li class="footer-list-item">
+        <a href="/">Home</a>
+      </li></ul>
+  </div>
+  <div>
+    <h2>Elsewhere</h2>
+    <ul class="footer-list">
+      <li class="footer-list-item">Instagram</li>
+      <li class="footer-list-item">LinkedIn</li>
+      <li class="footer-list-item">GitHub</li>
+    </ul>
+  </div>
 </footer>
-
+<div class="grid-wide copyright">
+  <small>A website by Michael Champlin - &copy; 2024 - <a href="/colophon">colophon</a></small>
+</div>
+  </main>
 </body>
 </html>

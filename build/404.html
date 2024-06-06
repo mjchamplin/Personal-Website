@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -8,27 +8,29 @@
 </head>
 <body>
   <main id="moo" class="full-width ">
-    <header id="header">
+        <header id="header">
       <div id="wordmark"><a href="/">Michael Champlin</a></div>
-      <nav id="top-navigation">
-        
-        <ul>
-          <li>
-            <a href="/about/">About</a>
-          </li>
-          <li>
-            <a href="/archive/">Archive</a>
-          </li>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/work/">Work</a>
-          </li>
-        </ul>
+      <!-- Top Navigation, move to include -->
+      <nav role="navigation" id="top-navigation">
+        <div id="menu-toggle">
+          <input type="checkbox" id="hamburger" />
+          <label id="stack" for="hamburger">&#9776;</label>
+          
+          <ul id="top-navigation-list">
+            <li>
+              <a href="/work/">Work</a>
+            </li>
+            <li>
+              <a href="/about/">About</a>
+            </li>
+            <li>
+              <a href="/resume/">Resumé</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <div class="wide">
+    <div class="grid-wide">
 	<p class="centered">
 		<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJld2p4Zjl1ZjNmdWx2Mndmbm5pdmxpdWpzazJiN253NGU4aDJsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OfpdDt12u1Psk/giphy.gif" ></br></br></br>
 	</p>
@@ -39,10 +41,37 @@
 		<a href="/">Go home?</a>
 	</p>
 </div>
-  </main>
-  <footer>
-  <small>A website by Michael Champlin - &copy; 2024 - <a href="/colophon">colophon</a></small>
+    <footer class="grid-item-5">
+  <div>
+    <h2>Information</h2>
+    <ul class="footer-list"><li class="footer-list-item">
+        <a href="/work/">Work</a>
+      </li><li class="footer-list-item">
+        <a href="/about/">About</a>
+      </li><li class="footer-list-item">
+        <a href="/archive/">Archive</a>
+      </li><li class="footer-list-item">
+        <a href="/cases/apple/">A Project about Apples</a>
+      </li><li class="footer-list-item">
+        <a href="/resume/">Resumé</a>
+      </li><li class="footer-list-item">
+        <a href="/tags/all/">My default title</a>
+      </li><li class="footer-list-item">
+        <a href="/">Home</a>
+      </li></ul>
+  </div>
+  <div>
+    <h2>Elsewhere</h2>
+    <ul class="footer-list">
+      <li class="footer-list-item">Instagram</li>
+      <li class="footer-list-item">LinkedIn</li>
+      <li class="footer-list-item">GitHub</li>
+    </ul>
+  </div>
 </footer>
-
+<div class="grid-wide copyright">
+  <small>A website by Michael Champlin - &copy; 2024 - <a href="/colophon">colophon</a></small>
+</div>
+  </main>
 </body>
 </html>

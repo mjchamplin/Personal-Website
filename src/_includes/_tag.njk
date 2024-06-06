@@ -1,0 +1,7 @@
+<div class="grid-wide grid-gutter-slug">
+Filter by skill: 
+        {% for tag in collections.all | getAllTags | filterTagList %}
+        {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            <span class="case-study-tag {{ tag | slugify }}"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></span>
+        {% endfor %}
+</div>

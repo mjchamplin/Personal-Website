@@ -1,0 +1,40 @@
+---
+title: Case study
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/css/main.css">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <main id="moo" class="full-width {{ slug | downcase }}">
+    {% include '_header' %}
+    <div class="grid-wide grid-subgrid {{ page-type }}">
+      <div class="grid-wide">
+          <h1>{{ title }}</h1>
+          <p class="case-study-meta"> 
+              Client: {{ client }}</br> 
+              Project: {{ project }}</br>
+              Skills: 
+                {%- for tag in tags -%}
+                    <span class="case-study-tag {{ tag | slugify }}">
+                      <a href="/tags/{{ tag | slugify }}">
+                        {{ tag }}
+                      </a>
+                    </span>
+                {%- else -%}
+                    <span class="case-study-tag">
+                        none
+                    </span>
+                {%- endfor -%}
+          </p>
+      </div>
+      {{ content }}
+    </div>
+    {% include '_footer' %}
+  </main>
+</body>
+</html>
