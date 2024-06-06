@@ -4,6 +4,7 @@ title: Work
 description: Work I'm proud of
 eleventyNavigation:
   key: Work
+  order: 1
 ---
 
 <div class="portfolio-card grid-item-5 grid-offset-2">

@@ -1,9 +1,10 @@
 ---
 layout: base
-title: About Michael
-description: About me, etc
+title: About
+description: About Michael, etc
 eleventyNavigation:
   key: About
+  order: 2
 ---
 
 <div class="grid-item-4">

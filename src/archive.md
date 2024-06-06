@@ -1,11 +1,9 @@
 ---
 layout: base
-title: testing an archive page
+title: Archive
 description: Testing how to display various kinds of content
-eleventyNavigation:
-  key: Archive
 ---
-<div class="archive">
+<div class="grid-wide">
 <ul>
 {%- for post in collections.all -%}
     <li class="archive-list-item">
