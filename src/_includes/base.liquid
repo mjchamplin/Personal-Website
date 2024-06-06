@@ -1,8 +1,8 @@
 ---
 title: My default title
 ---
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -11,21 +11,9 @@ title: My default title
 </head>
 <body>
   <main id="moo" class="full-width {{ slug | downcase }}">
-    <header id="header">
-      <div id="wordmark"><a href="/">Michael Champlin</a></div>
-      <nav id="top-navigation">
-        {% assign navPages = collections.all | eleventyNavigation %}
-        <ul>
-        {%- for entry in navPages %}
-          <li{% if entry.url == page.url %} class="nav-item-active"{% endif %}>
-            <a href="{{ entry.url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-        </ul>
-      </nav>
-    </header>
+    {% include '_header' %}
     {{ content }}
+    {% include '_footer' %}
   </main>
-  {% include 'footer' %}
 </body>
 </html>
