@@ -1,4 +1,3 @@
-
 // Imports
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap')
@@ -47,7 +46,7 @@ h2
 
 p
 	padding: 0
-	margin: .4rem 0
+	margin: 0 0 1rem
 	font-size: 1rem
 
 small
@@ -55,6 +54,9 @@ small
 
 a
 	transition: color 300ms
+	color: inherit
+	&:hover 
+		color: $red
 
 body
 	font-family: "Source Serif 4", serif
@@ -263,7 +265,7 @@ footer
 
 // Grid 
 
-// -- primary grid
+// -- primary grid [reusable as subgrid]
 .full-width
 	width: 100%
 	max-width: 1120px
@@ -337,9 +339,7 @@ footer
 
 .slug 
 	background-color: #eee
-	//padding: 1rem
 	@media only screen and (min-width: 1200px)
 		padding: 5rem
 	img 
 		filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, .14))
-

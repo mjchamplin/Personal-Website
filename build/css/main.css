@@ -34,7 +34,7 @@ h2 {
 
 p {
   padding: 0;
-  margin: 0.4rem 0;
+  margin: 0 0 1rem;
   font-size: 1rem;
 }
 
@@ -44,6 +44,10 @@ small {
 
 a {
   transition: color 300ms;
+  color: inherit;
+}
+a:hover {
+  color: #AA4B39;
 }
 
 body {
