@@ -5,7 +5,6 @@ page-type: case-study
 description: Research, strategy and design work for Southwest Airlines. Long-term engagement supporting operations + routing software replacement.
 
 ## Case study specific info
-
 client: Southwest Airlines
 project: Operations + Routing software replacement
 tags:

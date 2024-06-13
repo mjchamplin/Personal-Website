@@ -2,6 +2,7 @@
 layout: base
 title: Home
 slug: 'home'
+description: 'a description here'
 ---
 
 
