@@ -8,11 +8,11 @@ eleventyNavigation:
 ---
 
 <div class="portfolio-card grid-item-5 grid-offset-2">
-    <img src="https://picsum.photos/688/420?random=9">
+    <img src="https://i.ibb.co/HqG31jp/kyle-glenn-4-Sf-He-E5-Mp-Fk-unsplash.jpg" alt="kyle-glenn-4-Sf-He-E5-Mp-Fk-unsplash">
     <p>
-    Client: Some Client’s Name </br>
-    Project: A project, probably</br>
-    Details: Research, wireframing, presentation
+    Client: Southwest Airlines </br>
+    Project: Operations + Routing software replacement </br>
+    Details: Research, iA
     </p>
 </div>
 
@@ -20,7 +20,7 @@ eleventyNavigation:
     <img src="https://picsum.photos/688/420?random=1">
     <p>
     Client: Some Client’s Name </br>
-    Project: A project, probably</br>
+    Project: A project, probably</br>
     Details: Research, wireframing, presentation
     </p>
 </div>
@@ -29,7 +29,7 @@ eleventyNavigation:
     <img src="https://picsum.photos/400/578?random=2">
     <p>
     Client: Some Client’s Name </br>
-    Project: A project, probably</br>
+    Project: A project, probably</br>
     Details: Research, wireframing, presentation
     </p>
 </div>
@@ -38,7 +38,7 @@ eleventyNavigation:
     <img src="https://picsum.photos/400/578?random=3">
     <p>
     Client: Some Client’s Name </br>
-    Project: A project, probably</br>
+    Project: A project, probably</br>
     Details: Research, wireframing, presentation
     </p>
 </div>
@@ -49,7 +49,7 @@ eleventyNavigation:
     <img src="https://picsum.photos/400/320?random=4">
     <p>
     Client: Some Client’s Name </br>
-    Project: A project, probably</br>
+    Project: A project, probably</br>
     Details: Research, wireframing, presentation
     </p>
 </div>
