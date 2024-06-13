@@ -72,10 +72,14 @@ body
 .centered
 	text-align: center
 
-.big-p
+.big-p, .p-big
 	font-weight: 300
 	font-size: 2.25rem
 	line-height: 1.16em
+
+.p-med
+	font-size: 1.125rem
+	line-height: 1.5em
 
 // -- colors
 body
@@ -116,7 +120,6 @@ main
 	grid-column: 1 / -1
 	display: grid
 	gap: 1rem 0
-	margin: 3rem 0
 	overflow: hidden
 	@media only screen and (min-width: 1200px)
 		grid-template-columns: repeat(2, 1fr)
@@ -262,6 +265,18 @@ footer
 		text-decoration: none
 		color: inherit
 
+.tag-list
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.tag-list-item
+	margin: 0 0 2rem
+	p
+		margin: .5rem 0 0
+		max-width: 544px
+	a 
+		text-decoration: none
 
 // Grid 
 
@@ -272,6 +287,7 @@ footer
 	min-height: 80vh
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr 1fr
+	gap: 4rem 32px
 	@media only screen and (min-width: 1200px)
 		display: grid
 		grid-template-columns: repeat(8, 1fr)
@@ -279,20 +295,28 @@ footer
 		gap: 7.5rem 32px
 		grid-auto-flow: row
 	&.home
+		gap: 0 32px
 		@media only screen and (min-width: 1200px)
 			gap: 0 32px
 			// Removes the CSS Grid gap on home for more granular control
 
-// -- widths
-.grid-item-3
-	grid-column-end: span 3
+@media only screen and (min-width: 1200px)
+	.home > .grid-subgrid
+		gap: 0 32px
 
-.grid-item-4, .grid-item-5
+// -- widths
+
+
+.grid-item-3, .grid-item-4, .grid-item-5, .grid-item-6
 	grid-column-end: span 4
 
-.grid-item-5
-	@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1200px) 
+	.grid-item-3
+		grid-column-end: span 3
+	.grid-item-5
 		grid-column-end: span 5
+	.grid-item-6
+		grid-column-end: span 6
 
 .grid-wide
 	grid-column: 1 / -1
@@ -327,6 +351,8 @@ footer
 	@media only screen and (min-width: 1200px)
 		display: grid
 		row-gap: 6.5rem
+	&.grid-tight
+		row-gap: 2rem
 
 // Staging
 
