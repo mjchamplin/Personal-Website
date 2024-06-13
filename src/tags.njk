@@ -6,12 +6,34 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag | slugify }}/
 ---
-<div class="grid-wide {{ page-type }}">
-    <h1>Case studies tagged <span class="case-study-tag {{ tag | slugify }}">{{ tag }}</span></h1>
-    <ol>
+<div class="grid-wide {{ page-type }} grid-subgrid grid-tight">
+    <div class="grid-wide">
+        <h1>Case studies tagged <span class="case-study-tag {{ tag | slugify }}">{{ tag }}</span></h1>
+    </div>
+    <ol class="grid-wide grid-subgrid grid-tight tag-list">
         {% set taglist = collections[ tag ] %}
         {% for post in taglist | reverse %}
-            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+            <li class="tag-list-item grid-wide">
+            <h2>
+                <a href="{{ post.url }}">{{ post.data.title }}</a><br/>
+            </h2>
+            <p class="p-med">
+                {{ post.data.description }}
+                <!--
+                    {%- for tag in post.data.tags -%}
+                        <span class="case-study-tag">
+                          <a href="/tags/{{ tag | slugify }}">
+                            {{ tag }}
+                          </a>
+                        </span>
+                    {%- else -%}
+                        <span class="case-study-tag">
+                            none
+                        </span>
+                    {%- endfor -%}
+                -->
+            </p>
+            </li>
         {% endfor %}
     </ol>
     {% include '_tag.njk' %}
