@@ -11,6 +11,28 @@ slug: 'home'
 <div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
 <section class="grid-item-4 grid-offset-2">
   <h1>What I’m Looking For</h1>
-  <p>Vestibulum tempus imperdiet sem ac porttitor. Vivamus pulvinar commodo orci, suscipit porttitor velit elementum non. Fusce nec pellentesque erat, id lobortis nunc. Donec dui leo, ultrices quis turpis nec, sollicitudin sodales tortor. Aenean dapibus magna quam, id tincidunt quam placerat consequat.</p>
-  <p>Nulla eu laoreet ex. Vestibulum nec vulputate turpis, id euismod orci. Phasellus consectetur tortor est. Donec lectus ex, rhoncus ac consequat at, viverra sit amet sem. Aliquam sed vestibulum nibh.  Praesent non ex congue, tristique risus quis, blandit purus. Sed tristique sapien ut vehicula pretium. Donec purus metus, vulputate sit amet ullamcorper vel, aliquet ac lectus? </p>
+  <p>After spending a decade in product consulting working with all kinds of clients, I've arrived at a simple truth: I want to use my skills to have a positive impact on peoples’ lives. I'm looking for opportunities to improve inclusion and accessibility in product research and design, contribute to a team that shares my values, and work toward positive change in the world.</p>
+</section>
+<div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
+
+<section class="grid-wide grid-subgrid">
+  <div class="grid-item-5 grid-offset-2">
+    <h1>What I've been up to lately</h1>
+  </div>
+  <div class="portfolio-card grid-item-3 grid-offset-2">
+      <img src="https://picsum.photos/400/340?random=3">
+      <p>
+      Client: Some Client’s Name </br>
+      Project: A project, probably</br>
+      Details: Research, wireframing, presentation
+      </p>
+  </div>
+  <div class="portfolio-card grid-item-3">
+      <img src="https://picsum.photos/400/260?random=2">
+      <p>
+      Client: Some Client’s Name </br>
+      Project: A project, probably</br>
+      Details: Research, wireframing, presentation
+      </p>
+  </div>
 </section>
