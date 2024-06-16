@@ -2,7 +2,7 @@
 layout: base
 title: Home
 slug: 'home'
-description: 'a description here'
+description: 'Michael Champlin is a product designer and researcher in Dallas, Texas.'
 ---
 
 
