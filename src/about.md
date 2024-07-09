@@ -11,6 +11,19 @@ eleventyNavigation:
     <img src="https://i.ibb.co/Ycn0cgV/headshot.jpg" alt="headshot" />
 </div>
 
-<div class="grid-item-4 grid-align-bottom">
-    <p class="big-p">I’m a multi-disciplinary designer in Texas. Most recently, I’ve worked in product design consulting, and I’m interested in helping brands and causes tell stories using design and technology. I’ve worked in both research and design execution for over fifteen years.</p>
+<div class="grid-item-4 grid-align-middle">
+    <p class="big-p">I’m Michael, a creative guy in Dallas, Texas. I'm passionate about solving problems and telling stories.</p> 
+    <p class="big-p">I care about human beings, and I'm fiercely devoted to making the world a more accessible, inclusive, empathetic place.</p>
+</div>
+
+<div class="grid-item-6 grid-offset-2">
+<p class="p-med">
+<em>I'm glad you're here!</em> Here's a bit more about me:
+</p>
+<p class="p-med">
+Progressive, design-minded, restless, sometimes activist, photographer, former filmmaker, writer, zine-maker, general creative-type. Wanderlusty, breakfast food aficionado, a collector of many small things, of words, of experiences. A lover of friendship, of food, of here and there and of the journey between here and there.
+</p>
+<p class="p-med">
+From UX design and art direction to film photography and publishing editorial articles, I'm always exploring new creative endeavors and projects. 
+</p>
 </div>

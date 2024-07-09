@@ -10,4 +10,6 @@ This website was designed and built by yours truly. It's built in <a href="https
 You can view the source and judge my Sass on <a href="https://github.com/mjchamplin/champlin-2024">GitHub</a>.
 
 No "AI" was used in the creation of this website.
+
+xoxo
 </div>
