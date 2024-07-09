@@ -14,9 +14,11 @@ description: 'Michael Champlin is a product designer and researcher in Dallas, T
   <h1>What I’m Looking For</h1>
   <p>After spending a decade in product consulting working with all kinds of clients, I've arrived at a simple truth: I want to use my skills to have a positive impact on peoples’ lives. I'm looking for opportunities to improve inclusion and accessibility in product research and design, contribute to a team that shares my values, and work toward positive change in the world.</p>
 </section>
-<div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
 
-<section class="grid-wide grid-subgrid">
+<!-- div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div -->
+
+<!-- A "what I've been up to" section (future addition) -->
+<!--section class="grid-wide grid-subgrid">
   <div class="grid-item-5 grid-offset-2">
     <h1>What I've been up to lately</h1>
   </div>
@@ -36,4 +38,4 @@ description: 'Michael Champlin is a product designer and researcher in Dallas, T
       Details: Research, wireframing, presentation
       </p>
   </div>
-</section>
+</section-->
