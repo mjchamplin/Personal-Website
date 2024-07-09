@@ -2,19 +2,19 @@
   <div>
     <h2>Information</h2>
     <ul class="footer-list">
-    {%- for post in collections.all -%}
       <li class="footer-list-item">
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <a href="/">Home</a>
       </li>
-    {%- endfor -%}
+      <li>About</li>
+      <li>Contact</li>
+      <li>Resume</li>
     </ul>
   </div>
   <div>
     <h2>Elsewhere</h2>
     <ul class="footer-list">
-      <li class="footer-list-item">Instagram</li>
-      <li class="footer-list-item">LinkedIn</li>
-      <li class="footer-list-item">GitHub</li>
+      <li class="footer-list-item"><a href="https://instagram.com/mjchamplin">Instagram</a></li>
+      <li class="footer-list-item"><a href="https://www.linkedin.com/in/michaeljchamplin/">LinkedIn</a></li>
     </ul>
   </div>
 </footer>
@@ -24,5 +24,5 @@
   <path d="M16.0451 4.9526C16.2414 4.18387 16.9338 3.646 17.7272 3.646L19.1968 3.646C19.9902 3.646 20.6826 4.18387 20.8789 4.9526L22.0757 9.64003C22.356 10.7378 21.5266 11.8056 20.3936 11.8056L16.5304 11.8056C15.3974 11.8056 14.568 10.7378 14.8483 9.64003L16.0451 4.9526Z" fill="#7D7168"/>
   <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4693 1.84768L17.925 0.499483L17.603 0.62947L18.2957 2.34514L18.2957 4.05835L18.6429 4.05835L18.6429 2.34514L19.3356 0.62947L19.0136 0.499483L18.4693 1.84768Z" fill="#7D7168"/>
   </svg><br/>
-  <small>A website by {{ site.author }} - &copy; {{ site.copyrightYear }} - <a href="/colophon">colophon</a></small>
+  <small>Website by {{ site.author }} - &copy; {{ site.copyrightYear }} - <a href="/colophon">colophon</a></small>
 </div>
