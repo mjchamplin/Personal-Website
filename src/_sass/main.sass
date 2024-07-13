@@ -45,7 +45,7 @@ h2
 	font-weight: 300
 	margin: 0 0 .5em
 
-p
+//p
 	padding: 0
 	margin: 0 0 1rem
 	font-size: 1rem
@@ -78,9 +78,10 @@ body
 	font-size: 2.25rem
 	line-height: 1.16em
 
-.p-med
+p, .p-med
 	font-size: 1.125rem
 	line-height: 1.5em
+	margin: 0 0 1rem
 
 // -- colors
 body
@@ -273,9 +274,7 @@ footer
 
 .portfolio-card
 	p
-		font-size: 1.125rem
 		margin: 1rem 0 0
-		line-height: 1.6em
 
 .case-study-meta
 	line-height: 1.875rem
@@ -292,11 +291,11 @@ footer
 	background-color: $offwhite
 	transition: background-color .2s // needed?
 	// changing the tag bg color based on the tag
-	&.ux
+	&.ux, &.ux-design
 		background-color: #FEF0F0
 	&.research
 		background-color: #FAF0FF
-	&.presentation
+	&.presentation, &.ui-design
 		background-color: #E0EEF8
 	a
 		text-decoration: none
