@@ -8,3 +8,6 @@ No "AI" was used in the creation of this website.
 xoxo
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e8435cb0-462c-48ff-bb0c-086e5baaa9ca/deploy-status)](https://app.netlify.com/sites/champlin/deploys)
+
+Resources: 
+- [Sass workflow for Eleventy](https://11ty.recipes/recipes/add-a-sass-workflow/)
