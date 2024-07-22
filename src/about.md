@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 
 <div class="grid-item-4">
-    <img src="https://i.ibb.co/Ycn0cgV/headshot.jpg" alt="headshot" />
+    <img src="/_assets/img/headshot-Michael-Champlin.jpg" alt="headshot" />
 </div>
 
 <div class="grid-item-4 grid-align-middle">
