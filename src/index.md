@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Home
+title: Product designer and researcher
 slug: 'home'
 description: 'Michael Champlin is a product designer and researcher in Dallas, Texas.'
 ---
