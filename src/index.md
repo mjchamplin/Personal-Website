@@ -2,7 +2,7 @@
 layout: base
 title: Product designer and researcher
 slug: 'home'
-description: 'Michael Champlin is a product designer and researcher in Dallas, Texas.'
+description: 'Michael Champlin is a product designer and researcher in Dallas, Texas. He has over 15 years of experience in both research and design execution.'
 ---
 
 
