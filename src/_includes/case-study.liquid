@@ -10,24 +10,32 @@ title: Case study
   <main id="moo" class="full-width {{ slug | downcase }}">
     {% include '_header' %}
     <div class="grid-wide grid-subgrid {{ page-type }}">
-      <div class="grid-wide">
+      <div class="grid-item-5">
           <h1>{{ title }}</h1>
-          <p class="case-study-meta"> 
-              Client: {{ client }}</br> 
-              Project: {{ project }}</br>
+          <div class="case-study-meta"> 
+            <p>
+              Client: {{ client }}
+            </p>
+            <!-- Project: {{ project }}</br> -->
+            <p>
               Skills: 
-                {%- for tag in tags -%}
-                    <span class="case-study-tag {{ tag | slugify }}">
-                      <a href="/tags/{{ tag | slugify }}">
-                        {{ tag }}
-                      </a>
-                    </span>
-                {%- else -%}
-                    <span class="case-study-tag">
-                        none
-                    </span>
-                {%- endfor -%}
-          </p>
+              {%- for tag in tags -%}
+                  <span class="case-study-tag {{ tag | slugify }}">
+                    <a href="/tags/{{ tag | slugify }}">
+                      {{ tag }}
+                    </a>
+                  </span>
+              {%- else -%}
+                  <span class="case-study-tag">
+                      none
+                  </span>
+              {%- endfor -%}
+            </p>
+            <p>
+              Info: {{ description }}
+            </p>
+          </div>
+
       </div>
       {{ content }}
     </div>
