@@ -8,8 +8,6 @@ description: Research, strategy and design work for Southwest Airlines. Long-ter
 client: Southwest Airlines
 project: Operations + Routing software replacement
 tags:
-    - Research
-    - iA
 ---
 
 <div class="grid-wide grid-subgrid {{ page-type }}">
