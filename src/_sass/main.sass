@@ -87,7 +87,7 @@ body
 
 p, .p-med
 	font-size: 1.125rem
-	line-height: 1.5em
+	line-height: 1.6em
 	margin: 0 0 1rem
 
 figcaption
@@ -251,6 +251,11 @@ footer
 	.grid-wide
 		text-align: center
 
+.footer-widget
+	p 
+		//padding: 0
+		//margin: 0
+
 .footer-list 
 	list-style-type: none
 	margin: 0
@@ -276,12 +281,7 @@ footer
 // -- page-specific
 .home, .work 
 	p
-		display: block
-		font-size: 1.125rem
-		width: 100%
 		max-width: 800px
-		line-height: 1.6em
-		margin-top: 2rem
 
 .portfolio-card
 	p
@@ -365,10 +365,12 @@ footer
 		gap: 0 32px
 
 // -- widths
-.grid-item-3, .grid-item-4, .grid-item-5, .grid-item-6
+.grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5, .grid-item-6
 	grid-column-end: span 4
 
 @media only screen and (min-width: 1200px) 
+	.grid-item-2
+		grid-column-end: span 2
 	.grid-item-3
 		grid-column-end: span 3
 	.grid-item-5
