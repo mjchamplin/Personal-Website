@@ -29,7 +29,6 @@ html
 
 body
 	margin: 0
-
 p:empty 
 	display: none
 
@@ -67,7 +66,7 @@ a
 		color: $red
 
 body
-	font-family: "Source Serif 4", serif
+	font-family: $serif
 	font-optical-sizing: auto
 	font-weight: 400
 	font-style: normal
@@ -93,6 +92,10 @@ p, .p-med
 figcaption
 	text-align: center
 	font-style: italic
+
+ol 
+	li 
+		margin: .25em 0
 
 // -- colors
 body
@@ -274,6 +277,9 @@ footer
 .rule
 	height: 1px
 	border-bottom: 1px solid $black
+.rule-heavy
+	height: 2px
+	border-bottom: 2px solid $black
 
 .drop-shadow
 	box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 8%)
@@ -341,6 +347,33 @@ footer
 .resources
 	section
 		margin-bottom: 3rem
+
+// Journal
+.journal
+	h1
+		font-size: 1.75rem
+		font-weight: 600
+		margin: 0 0 2rem
+
+	article
+		h2
+			font-size: 1.25rem
+			font-weight: 600
+		p
+			font-size: 1rem
+			line-height: 164%
+
+// Misc
+.photo-adventure
+	h2
+		font-family: $sans 
+		font-weight: 800
+		font-size: 1.375rem
+		//text-transform: uppercase
+		letter-spacing: -.02em
+	h2:not(:first-of-type)
+		margin: 1.5em 0 .5em
+
 
 // Grid 
 
