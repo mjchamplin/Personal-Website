@@ -1,12 +1,14 @@
 // Imports
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
 
 // Variables
 // -- colors
 $white: #ffffff
 $offwhite: #f5f5f5
 $black: #111111
+$gray80: #5E5E5E
 $red: #AA4B39
 $green: #84b082
 $gray: #888
@@ -15,6 +17,7 @@ $pink: #FF00A8
 // -- fonts
 $sans: "Source Sans 3", sans-serif
 $serif: "Source Serif 4", serif
+$work: "Work Sans", sans-serif
 
 // Resets
 *
@@ -38,14 +41,28 @@ figure
 // Global styles
 // -- typography
 
+body
+	font-family: $serif
+	font-optical-sizing: auto
+	font-weight: 400
+	font-style: normal
+
 h1
 	font-size: 2.25rem
 	font-weight: 300
 	margin: 0 0 1em
-h2
+	//font-family: $work
+	//font-size: 2.75rem
+	//font-weight: 700
+	//margin: 0 0 1rem
+
+h2, .footer-widget h2
 	font-size: 1.5rem
-	font-weight: 300
 	margin: 0 0 .5em
+	font-weight: 300
+//	font-family: $work
+//	font-size: 1.25rem
+//	font-weight: 600
 
 //p
 	padding: 0
@@ -64,12 +81,6 @@ a
 	color: inherit
 	&:hover 
 		color: $red
-
-body
-	font-family: $serif
-	font-optical-sizing: auto
-	font-weight: 400
-	font-style: normal
 
 .pre 
 	font-family: monospace
@@ -289,6 +300,12 @@ footer
 	p
 		max-width: 800px
 
+.home h1
+	font-family: $serif
+	font-size: 2.25rem
+	font-weight: 300
+	margin: 0 0 1em
+
 .portfolio-card
 	p
 		margin: 1rem 0 0
@@ -351,36 +368,99 @@ footer
 // Journal
 .journal
 	h1
-		font-size: 1.75rem
 		font-weight: 600
-		margin: 0 0 2rem
-
 	article
+		margin: 2rem 0
 		h2
-			font-size: 1.25rem
-			font-weight: 600
+			font-size: 1.375rem
+			font-weight: 800
+			margin-bottom: 1rem
+			a 
+				text-decoration: none
 		p
 			font-size: 1rem
 			line-height: 164%
+	.entry
+		time
+			font-family: $work
+			font-size: 0.9375rem
+			display: inline-block
+			color: #5E5E5E
+			margin-bottom: .5rem
 
-// Misc
-.photo-adventure
-	h2
-		font-family: $sans 
-		font-weight: 800
-		font-size: 1.375rem
-		//text-transform: uppercase
-		letter-spacing: -.02em
-	h2:not(:first-of-type)
-		margin: 1.5em 0 .5em
+// --> Post
+.post 
+	h1
+		font-family: $work
+		font-size: 2.75rem
+		font-weight: 700
+		margin: 0 0 1rem
+	p 
+		margin: 0 0 2rem
+	figure 
+		margin: 3rem 0
+	.meta 
+		background-color: #F3F3F3
+		font-family: $work
+		margin-bottom: 2rem
+		padding: .375rem .75rem
+		border-radius: 8px
+		width: inherit
+		display: inline-block
+		p 
+			font-size: 1rem
+			margin: 0 0
+	.original
+		font-style: italic
+		color: $gray80
+	.back
+		font-family: $work
+		margin-bottom: 1rem
+		a
+			text-decoration: none
+	.back > *
+		vertical-align: middle
+		margin-right: .25rem
+	blockquote, blockquote p
+		font-size: 2.625rem
+		font-weight: 300
+		line-height: 140%
+		margin: 0 0 1em
+		max-width: 400px
 
+.grid-tight .meta 
+	margin-bottom: 0
+
+.pullquote
+	font-size: 1.625rem
+	font-style: italic
+	font-weight: 300
+	line-height: 140%
+	padding: 2.5rem 0
+	margin: 1rem 0 2.5rem
+	//border-top: 1px solid $black
+	//border-bottom: 1px solid $black
+.pullquote::before
+	content: ''
+	display: block
+	width: 50%
+	margin: 0 auto
+	border-top: 1px solid #525252
+	padding-bottom: 2.5rem
+.pullquote::after
+	content: ''
+	display: block
+	width: 50%
+	margin: 0 auto
+	border-bottom: 1px solid #525252
+	padding-top: 2.5rem
 
 // Grid 
 
 // -- primary grid [reusable as subgrid]
 .full-width
 	width: 100%
-	max-width: 1120px
+	max-width: 1184px
 	min-height: 80vh
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr 1fr
