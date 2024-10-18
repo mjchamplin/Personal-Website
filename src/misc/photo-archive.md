@@ -1,10 +1,12 @@
 ---
-layout: simple
+layout: base
 title: Photo Adventure
 description: a photo from my archive chosen each day at random and posted.
 slug: photo-adventure
 ---
 
+
+<div class="grid-wide grid-subgrid grid-tight">
 <div class="grid-item-6 grid-offset-2">
 	<figure>
 		<img src="/_assets/img/Random-photo-adventure.jpg" alt="An image of an out of focus child behind a sharply focused wildflower. Text overlays the image reading: Thank you for joining me on a Random Photo Adventure" />
@@ -42,4 +44,5 @@ xoxo
 <br/>
 <a href="https://bsky.app/profile/photoeveryday.bsky.social" class="button">Follow along on Bluesky</a>
 
+</div>
 </div>

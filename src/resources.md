@@ -1,12 +1,11 @@
 ---
-layout: base
+layout: simple
 title: Resources
 description: Resources that come in handy
 slug: resources
 ---
-<div class="grid-wide">
 
-# Resources
+
 
 <section>
 
@@ -46,4 +45,3 @@ Step-by-step instructions on assembling a basic 8-page zine (with photos).
 
 -
 </section>
-</div>
