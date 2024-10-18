@@ -1,0 +1,49 @@
+---
+layout: base
+title: /journal
+slug: journal
+eleventyExcludeFromCollections: ["posts"]
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+---
+
+{# Specify what collection to show #}
+{% set postslist = collections.posts %}
+
+<div class="grid-wide grid-subgrid grid-tight">
+	<div class="grid-wide">
+	    <h1>{{ title }}</h1>
+		{% if pagination.href.previous %}
+			<a href="{{ pagination.href.previous }}">previous</a>
+	    {% endif %}
+	    {% if pagination.href.next %}
+			<a href="{{ pagination.href.next }}">next</a>
+	    {% endif %}
+	    <div class="rule"></div>
+	</div>
+
+	<section class="grid-item-4 grid-offset-2 grid-subgrid grid-tight">
+		{#  {% for post in postslist | reverse %} #}
+		{% for post in posts %}
+		    <article class="grid-wide entry">
+		    	<a href="{{ post.url }}">
+			    	<time datetime="{{ post.date | shortDate }}">{{ post.date | postDate }}</time>
+			    </a>
+		    	{% if post.data.title %}
+		    	<h2>
+		    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+		    	</h2>
+		    	{% endif %}
+		    	<p>
+		    		{% if post.data.description %}
+		    			{{ post.data.description }}
+		    		{% endif %}
+		    	</p>
+		    </article>
+		    <div class="rule grid-item-3"></div>
+		{% endfor %}
+	</section>
+</div>
