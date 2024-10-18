@@ -1,14 +1,14 @@
 ---
-title: My default title
+
 ---
 <!DOCTYPE html>
 <html lang="en">
-{% include '_head' %}
+{% include '_head' %} <!-- html <head> stuff -->
 <body>
   <main id="moo" class="full-width {{ slug | downcase }}">
-    {% include '_header' %}
-    {{ content }}
-    {% include '_footer' %}
+    {% include '_header' %} <!-- page <header> -->
+    {{ content }} 
+    {% include '_footer' %} <!-- page <footer> -->
   </main>
 </body>
 </html>
