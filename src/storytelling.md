@@ -6,7 +6,7 @@ description: some of my writing, etc
 
 <div class="grid-item-6">
     <h1>Storytelling</h1>
-    <img src="/_assets/img/New-Mexico.jpg">
+    <img src="/_assets/img/New-Mexico.jpg" alt="">
     <ul class="storytelling">
         <li>
             <h2>

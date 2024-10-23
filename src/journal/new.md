@@ -17,7 +17,7 @@ Nulla eu laoreet ex. Vestibulum nec vulputate turpis, id euismod orci. Phasellus
 </div>
 <div class="grid-wide">
    <figure>
-      <img src="https://images.unsplash.com/photo-1515894203077-9cd36032142f"/>
+      <img src="https://images.unsplash.com/photo-1515894203077-9cd36032142f" alt=""/>
       <figcaption>Sleepy person is sleepy</figcaption>
    </figure>
 </div>
@@ -29,13 +29,13 @@ Vestibulum tempus imperdiet sem ac porttitor. Vivamus pulvinar commodo orci, sus
 
 <div class="grid-item-4">
    <figure>
-      <img src="https://placecats.com/600/400"/>
+      <img src="https://placecats.com/600/400"alt="a cat"/>
       <figcaption>Here's a caption</figcaption>
    </figure>
 </div>
 <div class="grid-item-4">
    <figure>
-      <img src="https://placecats.com/601/400"/>
+      <img src="https://placecats.com/601/400" alt="cat"/>
       <figcaption>Here's a cat, obviously!</figcaption>
    </figure>
 </div>

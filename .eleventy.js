@@ -1,6 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { DateTime } = require("luxon");
-
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
 
@@ -83,9 +83,27 @@ module.exports = function(eleventyConfig) {
     });
 
   // Find and copy any unprocessed files, maintaining directory structure.
-  // Currently this catches images, pdfs, etc. 
-  // ToDo: Replace with image processing
+  // Currently used to pass-through PDF files. 
   eleventyConfig.addPassthroughCopy("src/_assets/");
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // which file extensions to process
+    extensions: "html",
+
+    // Add any other Image utility options here:
+    // optional, output image formats
+    formats: ["webp", "jpeg"],
+    // formats: ["auto"],
+
+    // optional, output image widths
+    widths: ["2240"],
+
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+    },
+  });
 
   // Set input and output directories for Eleventy
   return {
@@ -94,6 +112,8 @@ module.exports = function(eleventyConfig) {
       output: './build'
     }
   };
+
+
 
   
   eleventyConfig.setServerOptions({
