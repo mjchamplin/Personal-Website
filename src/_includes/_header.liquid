@@ -1,7 +1,7 @@
     <header id="header">
       <div id="wordmark"><a href="/">Michael Champlin</a></div>
       
-      <!-- Top Navigation, move to include -->
+      <!-- Top Navigation -->
       <nav id="top-navigation">
         <div id="menu-toggle">
           <input type="checkbox" id="hamburger" />
@@ -9,12 +9,15 @@
           {% assign navPages = collections.all | eleventyNavigation %}
           <ul id="top-navigation-list">
           {%- for entry in navPages %}
-            <li{% if entry.url == page.url %} class="nav-item-active"{% endif %}>
+            <li
+            {% if entry.url == page.url %} class="nav-item-active"
+            {% endif %}
+            >
               <a href="{{ entry.url }}">{{ entry.title }}</a>
             </li>
           {%- endfor %}
           </ul>
         </div>
       </nav>
-      
+
     </header>
