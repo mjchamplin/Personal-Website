@@ -4,8 +4,9 @@ title: Storytelling
 description: some of my writing, etc
 ---
 
-<div class="grid-item-6">
+<div class="grid-item-6 grid-offset-2">
     <h1>Storytelling</h1>
+    <p>Writings and such.</p>
     <img src="/_assets/img/New-Mexico.jpg" alt="">
     <ul class="storytelling">
         <li>
