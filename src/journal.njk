@@ -8,42 +8,59 @@ pagination:
   size: 10
   alias: posts
   reverse: true
+eleventyNavigation:
+  key: Journal
+  order: 4
 ---
 
-{# Specify what collection to show #}
-{% set postslist = collections.posts %}
 
-<div class="grid-wide grid-subgrid grid-tight">
+<div class="grid-wide grid-subgrid"><!-- use grid-tight to reset the margins -->
 	<div class="grid-wide">
-	    <h1>{{ title }}</h1>
-		{% if pagination.href.previous %}
-			<a href="{{ pagination.href.previous }}">previous</a>
-	    {% endif %}
-	    {% if pagination.href.next %}
-			<a href="{{ pagination.href.next }}">next</a>
-	    {% endif %}
+	    <h1 style="display: inline-block;">{{ title }}</h1>
+	    <p style="display: inline-block; margin-left: 1.5rem">thoughts, photographs, clippings, etc.</p>
 	    <div class="rule"></div>
 	</div>
 
-	<section class="grid-item-4 grid-offset-2 grid-subgrid grid-tight">
-		{#  {% for post in postslist | reverse %} #}
+	<section class="grid-item-6 grid-offset-2 grid-subgrid">
 		{% for post in posts %}
-		    <article class="grid-wide entry">
-		    	<a href="{{ post.url }}">
-			    	<time datetime="{{ post.date | shortDate }}">{{ post.date | postDate }}</time>
-			    </a>
-		    	{% if post.data.title %}
-		    	<h2>
-		    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
-		    	</h2>
-		    	{% endif %}
-		    	<p>
-		    		{% if post.data.description %}
-		    			{{ post.data.description }}
-		    		{% endif %}
-		    	</p>
-		    </article>
-		    <div class="rule grid-item-3"></div>
+				{% if post.data.clipping == true %} {# post format for clippings #}
+					<article class="entry grid-item-4 clipping">
+						{% if post.data.title %}
+				    	<h2>
+				    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+				    	</h2>
+			    	{% endif %}
+			    		<time datetime="{{ post.date | shortDate }}">
+			    			<a href="{{ post.url }}">{{ post.date | postDate }}</a>
+			    		</time>
+			    	<p>
+			    		{{ post.content |safe  }}
+			    	</p>
+					</article>
+				{% else %} {# post format for everything else #}
+			    <article class="entry grid-item-4">
+			    	{% if post.data.thumbnail %}
+			    		<a href="{{ post.url }}">
+			    			<img src="{{ post.data.thumbnail }}" alt="{{ post.data.description }}" class="post-thumbnail"/>
+			    		</a>
+			    	{% endif %}
+			    	{% if post.data.title %}
+				    	<h2>
+				    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+				    	</h2>
+			    	{% endif %}
+			    	<p>
+			    		<time datetime="{{ post.date | shortDate }}">{{ post.date | postDate }}</time>
+			    		{% if post.data.description %}
+			    			&mdash;
+			    			{{ post.data.description }}
+			    		{% endif %}
+			    	</p>
+			    </article>
+		    {% endif %}
+		    <div class="grid-item-3 rule"></div>
 		{% endfor %}
 	</section>
+	{% include '_pagination.njk' %}
+
 </div>
