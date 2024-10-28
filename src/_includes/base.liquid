@@ -5,7 +5,7 @@
 <html lang="en">
 {% include '_head' %} <!-- html <head> stuff -->
 <body>
-  <main id="moo" class="full-width {{ slug | downcase }}">
+  <main id="moo" class="full-width {{ slug | slugify }}">
     {% include '_header' %} <!-- page <header> -->
     {{ content }} 
     {% include '_footer' %} <!-- page <footer> -->
