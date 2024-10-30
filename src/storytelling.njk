@@ -1,0 +1,52 @@
+---
+layout: base
+title: Storytelling
+description: some of my writing, etc
+eleventyExcludeFromCollections: ["stories"]
+slug: storytelling
+pagination:
+  data: collections.stories
+  size: 10
+  alias: stories
+  reverse: true
+permalink: "storytelling/{% if pagination.pageNumber > 0 %}stories-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+<div class="grid-item-6 grid-offset-2">
+    <h1>Storytelling</h1>
+    <p>Writings and such.</p>
+</div>
+
+<section class="grid-item-6 grid-offset-2 grid-subgrid">
+    {% for post in stories %}
+        <article class="story grid-item-3">
+            <a href="{{ post.data.original.url }}" target="_blank">
+                {% if post.data.thumbnail %}
+                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.description }}" class="post-thumbnail"/>
+                {% else %}
+                    <img src="/_assets/img/story-thumbnail.png" alt="{{ post.data.description }}" class="post-thumbnail"/>
+                {% endif %}
+            </a>
+            </div>
+            <div class="grid-item-4">
+                <h2>
+                    {% if post.data.original.url %}
+                        <a href="{{ post.data.original.url }}" target="_blank">{{ post.data.title }}<ion-icon name='open-outline'></ion-icon></a>
+                    {% else %}
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    {% endif %}
+                </h2>
+                {% if post.data.original.title %}
+                    <p class="original">
+                        {{ post.data.original.title }}, <time datetime="{{ post.date | shortDate }}">{{ post.data.original.date | postDate }}</time>
+                    </p>
+                {% endif %}
+                <p>
+                    {% if post.data.description %}
+                        {{ post.data.description }}
+                    {% endif %}
+                </p>
+            </div>
+        </article>
+    {% endfor %}
+</section>

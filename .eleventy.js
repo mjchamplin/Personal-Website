@@ -82,6 +82,7 @@ module.exports = function(eleventyConfig) {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_SHORT);
     });
 
+    
   // Find and copy any unprocessed files, maintaining directory structure.
   // Currently used to pass-through PDF files. 
   eleventyConfig.addPassthroughCopy("src/_assets/");
