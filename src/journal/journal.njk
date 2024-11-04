@@ -1,0 +1,65 @@
+---
+layout: base
+title: /journal
+description: thoughts, photographs, clippings, etc.
+slug: journal
+eleventyExcludeFromCollections: ["posts"]
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+eleventyNavigation:
+  key: Journal
+  order: 4
+permalink: "journal/{% if pagination.pageNumber > 0 %}journal-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+
+<div class="grid-wide">
+    <h1 style="display: inline-block;">{{ title }}</h1>
+    <p style="display: inline-block; margin-left: 1.5rem">thoughts, photographs, clippings, etc.</p>
+    <div class="rule"></div>
+</div>
+
+<section class="grid-item-6 grid-offset-2 grid-subgrid">
+	{% for post in posts %}
+			{% if post.data.clipping == true %} {# post format for clippings #}
+				<article class="entry grid-item-4 clipping">
+					{% if post.data.title %}
+			    	<h2>
+			    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+			    	</h2>
+		    	{% endif %}
+		    		<time datetime="{{ post.date | shortDate }}">
+		    			<a href="{{ post.url }}">{{ post.date | postDate }}</a>
+		    		</time>
+		    	<p>
+		    		{{ post.content |safe  }}
+		    	</p>
+				</article>
+			{% else %} {# post format for everything else #}
+		    <article class="entry grid-item-4">
+		    	{% if post.data.thumbnail %}
+		    		<a href="{{ post.url }}">
+		    			<img src="{{ post.data.thumbnail }}" alt="{{ post.data.description }}" class="post-thumbnail"/>
+		    		</a>
+		    	{% endif %}
+		    	{% if post.data.title %}
+			    	<h2>
+			    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+			    	</h2>
+		    	{% endif %}
+		    	<p>
+		    		<time datetime="{{ post.date | shortDate }}">{{ post.date | postDate }}</time>
+		    		{% if post.data.description %}
+		    			&mdash;
+		    			{{ post.data.description }}
+		    		{% endif %}
+		    	</p>
+		    </article>
+	    {% endif %}
+	    <div class="grid-item-3 rule"></div>
+	{% endfor %}
+</section>
+{% include '_pagination.njk' %}

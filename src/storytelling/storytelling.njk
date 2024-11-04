@@ -1,9 +1,9 @@
 ---
 layout: base
 title: Storytelling
-description: some of my writing, etc
-eleventyExcludeFromCollections: ["stories"]
+description: Writings and such.
 slug: storytelling
+eleventyExcludeFromCollections: ["stories"]
 pagination:
   data: collections.stories
   size: 10
@@ -41,12 +41,13 @@ permalink: "storytelling/{% if pagination.pageNumber > 0 %}stories-{{ pagination
                         {{ post.data.original.title }}, <time datetime="{{ post.date | shortDate }}">{{ post.data.original.date | postDate }}</time>
                     </p>
                 {% endif %}
-                <p>
-                    {% if post.data.description %}
+                {% if post.data.description %}
+                    <p>
                         {{ post.data.description }}
-                    {% endif %}
-                </p>
+                    </p>
+                {% endif %}
             </div>
         </article>
     {% endfor %}
 </section>
+{% include '_pagination.njk' %}
