@@ -93,14 +93,16 @@ module.exports = function(eleventyConfig) {
 
     // Add any other Image utility options here:
     // optional, output image formats
-    formats: ["webp", "jpeg"],
+    formats: ["jpeg"],
     // formats: ["auto"],
 
     // optional, output image widths
-    widths: ["2240"],
+    widths: ['auto', 1088, 2240],
+
 
     // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
+      sizes: "100vw",
       loading: "lazy",
       decoding: "async",
     },
