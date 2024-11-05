@@ -50,7 +50,12 @@
     <meta property="og:title" content="{{ title }}">
     <meta property="og:url" content="{{ site.canonical }}{{ page.url }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="{{ data.url }}/_assets/img/share-preview.jpg">
+
+    {% if thumbnail %}
+      <meta property="og:image" content="{{ thumbnail }}">
+    {% else %}
+      <meta property="og:image" content="{{ data.url }}/_assets/img/share-preview.jpg">
+    {% endif %}
     <meta property="og:image:alt" content="{{ description }}">
 
     <!-- Ionicons -->
