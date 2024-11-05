@@ -112,7 +112,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPlugin(feedPlugin, {
     type: "atom", // or "rss", "json"
-    outputPath: "/journal/feed.xml",
+    outputPath: "/feed.xml",
     collection: {
       name: "posts", // iterate over `collections.posts`
       limit: 10,     // 0 means no limit
