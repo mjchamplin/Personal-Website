@@ -17,8 +17,8 @@ permalink: "journal/{% if pagination.pageNumber > 0 %}journal-{{ pagination.page
 
 
 <div class="grid-wide">
-    <h1 style="display: inline-block;">{{ title }}</h1>
-    <p style="display: inline-block; margin-left: 1.5rem">thoughts, photographs, clippings, etc.</p>
+    <h1>{{ title }}</h1>
+    <p class="subheading">thoughts, photographs, clippings, etc.</p>
     <div class="rule"></div>
 </div>
 
@@ -61,5 +61,8 @@ permalink: "journal/{% if pagination.pageNumber > 0 %}journal-{{ pagination.page
 	    {% endif %}
 	    <div class="grid-item-3 rule"></div>
 	{% endfor %}
+	<div id="feed" class="grid-wide">
+		<a href="https://champl.in/feed.xml" class="button small"><ion-icon name="logo-rss"></ion-icon>Subscribe via RSS</a>
+	</div>
 </section>
 {% include '_pagination.njk' %}
