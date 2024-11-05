@@ -2,6 +2,7 @@
 layout: post-big
 title: "Pecos Station, NM"
 thumbnail: /_assets/img/journal/pecos-station.jpg
+description: "On the roadside in New Mexico, Dec 26, 2022."
 ---
 
 <div class="grid-wide">
