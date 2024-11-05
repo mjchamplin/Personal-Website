@@ -1,10 +1,11 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { DateTime } = require("luxon");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
 
-  // Load plugins
+  // Load nav plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   
 
@@ -102,10 +103,30 @@ module.exports = function(eleventyConfig) {
 
     // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
+      // This one was frustrating. See: https://blog.sebin-nyshkim.net/posts/responsive-self-hosted-images-for-your-eleventy-blog/#fn1
       sizes: "100vw",
       loading: "lazy",
       decoding: "async",
     },
+  });
+
+    eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom", // or "rss", "json"
+    outputPath: "/journal/feed.xml",
+    collection: {
+      name: "posts", // iterate over `collections.posts`
+      limit: 10,     // 0 means no limit
+    },
+    metadata: {
+      language: "en",
+      title: "Michael Champlin's Journal",
+      subtitle: "thoughts, photographs, clippings, etc.",
+      base: "https://champl.in",
+      author: {
+        name: "Michael Champlin",
+        email: "", // Optional
+      }
+    }
   });
 
   // Set input and output directories for Eleventy
