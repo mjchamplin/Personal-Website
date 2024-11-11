@@ -100,6 +100,9 @@ module.exports = function(eleventyConfig) {
     // optional, output image widths
     widths: ['auto', 1088, 2240],
 
+    urlPath: "/_assets/img/",
+    outputDir: "./build/_assets/img/",
+
 
     // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
@@ -141,7 +144,7 @@ module.exports = function(eleventyConfig) {
 
   
   eleventyConfig.setServerOptions({
-    watch: ["build/_assets/css/*.css"],
+    watch: ["build/_assets/css/main.css"],
   });
 
 };
