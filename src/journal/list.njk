@@ -1,0 +1,42 @@
+---
+layout: base
+title: /list
+description: thoughts, photographs, clippings, etc.
+slug: list
+eleventyExcludeFromCollections: ["posts"]
+pagination:
+  data: collections.posts
+  size: 100
+  alias: posts
+  reverse: true
+permalink: "journal/list/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+<div class="grid-wide">
+    <h1>/journal archive</h1>
+    <p class="subheading">thoughts, photographs, clippings, etc. &mdash; in list form
+    <div class="rule"></div>
+</div>
+
+<div class="grid-item-4 slug">
+<p>
+  All journal entries, by date:
+</p>
+<ul>
+  {% for post in posts %}
+  <li>
+    <time datetime="{{ post.date | shortDate }}" class="meta">{{ post.date | postDate }}</time>
+    <a href="{{ post.url }}" class="post-title">
+      {% if post.data.title %}
+        {{ post.data.title }}
+      {% else %}
+        /journal/{{ post.fileSlug }}
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</div>
+<div id="feed" class="grid-wide">
+  <a href="https://champl.in/feed.xml" class="button small"><ion-icon name="logo-rss"></ion-icon>Subscribe via RSS</a>
+</div>
+{% include '_pagination.njk' %}
