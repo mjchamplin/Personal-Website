@@ -21,9 +21,7 @@ title: Case study
               Skills: 
               {%- for tag in tags -%}
                   <span class="case-study-tag {{ tag | slugify }}">
-                    <a href="/tags/{{ tag | slugify }}">
                       {{ tag }}
-                    </a>
                   </span>
               {%- else -%}
                   <span class="case-study-tag">
