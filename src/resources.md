@@ -1,23 +1,9 @@
 ---
 layout: simple
-title: Resources
+title: Zine & Self-publishing Resources
 description: Resources that come in handy
 slug: resources
 ---
-
-
-
-<section>
-
-## Design
-
-- [Butterick's Practical Typography](https://practicaltypography.com)<br>
-Fantastic resource for basic to intermediate typographical knowledge. A good resource for people non-designers who want to learn more about creating more pleasant, more readable communication.
-
-- [Awesome Ipsum](https://github.com/templeman/awesome-ipsum)<br>
-The definitive list of Lorem Ipsum generators. 
-
-</section>
 
 <section>
 
@@ -34,14 +20,4 @@ Layout guide for a 32-page mini-zine printed on a single US Letter sheet.
 
 - ['Poker Faces' zine Part 2: Construction](https://mothwomanpress.blogspot.com/2012/12/poker-faces-zine-part-2-construction.html?m=1)<br>
 Step-by-step instructions on assembling a basic 8-page zine (with photos).
-</section>
-
-<section>
-
-## Workshops / Meetings / Gatherings
-
-- [The Only List Of Icebreaker Questions You’ll Ever Need](https://museumhack.com/list-icebreakers-questions/)<br>
-100 Icebreaker questions which are "relaxed, fun & simple but will encourage the team to give meaningful answers."
-
--
 </section>
