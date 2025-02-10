@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="grid-wide grid-subgrid grid-tight post">
+<div class="grid-wide grid-subgrid grid-tight post {{ "clipping" if clipping }}">
   <div class="grid-item-4 grid-offset-3">  
     <div class="back">
       {% if '/journal' in page.url %}
@@ -16,9 +16,10 @@ layout: base
       {% else %}
       {% endif %}
     </div>
+
     <h1>{{ title }}</h1>
     <div class="meta">
-      <p><time datetime="{{ page.date | shortDate }}">Published {{ page.date | postDate }}</time>{% if original.title %}<span class="original"> &mdash; originally posted <time datetime="{{ original.date | shortDate }}">{{ original.date | postDate }}</time> on <a href="{{ original.url }}">{{ original.title }}</a></span>{% endif %}</p>
+      <time datetime="{{ page.date | shortDate }}">Published {{ page.date | postDate }}</time>{% if original.title %}<span class="original"> &mdash; originally posted <time datetime="{{ original.date | shortDate }}">{{ original.date | postDate }}</time> on <a href="{{ original.url }}">{{ original.title }}</a></span>{% endif %}
     </div>
   </div>
   {{ content | safe }}

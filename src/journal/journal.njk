@@ -27,11 +27,6 @@ permalink: "journal/{% if pagination.pageNumber > 0 %}journal-{{ pagination.page
 	{% for post in posts %}
 			{% if post.data.clipping == true %} {# post format for clippings #}
 				<article class="entry grid-item-4 clipping">
-					{% if post.data.title %}
-			    	<h2>
-			    		<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
-			    	</h2>
-		    	{% endif %}
 		    		<time datetime="{{ post.date | shortDate }}">
 		    			<a href="{{ post.url }}">{{ post.date | postDate }}</a>
 		    		</time>
