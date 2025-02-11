@@ -11,6 +11,7 @@
           {%- for entry in navPages %}
             <li
             {% if entry.url == page.url %} class="nav-item-active"
+            {% elsif entry.url contains 'journal' and page.url contains 'journal' %} class="nav-item-active"
             {% endif %}
             >
               <a href="{{ entry.url }}">{{ entry.title }}</a>
@@ -21,3 +22,4 @@
       </nav>
 
     </header>
+
