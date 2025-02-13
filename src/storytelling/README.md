@@ -7,9 +7,9 @@ This directory functions very similarly to /journal and uses the same content la
 `title:` - Title of piece 
 `description:` - A brief description or tagline for the piece
 `thumbnail:` - A post thumbnail. See /journal for specs
-`date:` (optional) -  
-original: 
-   title: Medium
-   url: https://medium.com/@mjchamplin/an-architecture-of-thought-5c030ed558f4
-   date: 2013-09-20
----
+`date:` (optional) - standard post date
+`original:` - Collected metadata for original piece
+`   title:` - Title of original published location (ie Medium)
+`   url:` - Original source (if applicable)
+`   date:` - Date of original publication
+
