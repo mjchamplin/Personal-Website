@@ -1,48 +1,59 @@
 {
-    "examples": [
+    "examples_big": [
         {
             "src": "space.png",
-            "caption": "black"
+            "caption": "Space yoga studio"
         },
         {
             "src": "stone-soup.png",
-            "caption": "black"
+            "caption": "Stone Soup logo"
+        },
+        {
+            "src": "orange-cat-parade.png",
+            "caption": "Orange Cat Parade"
         },
         {
             "src": "goodgirls.png",
-            "caption": "black"
-        },
+            "caption": "Good Girls logo"
+        }
+    ],
+
+    "examples": [
         {
             "src": "kinfolk.png",
-            "caption": "black"
+            "caption": "Kinfolk logo"
         },
         {
             "src": "long-beach.png",
-            "caption": "black"
+            "caption": "Long Beach Howard Art Museum"
         },
         {
             "src": "minum.png",
-            "caption": "black"
+            "caption": "Minum"
         },
         {
             "src": "mm.png",
-            "caption": "black"
+            "caption": "Murphy's Mountain Lake Retreat"
         },
         {
             "src": "nucleus.png",
-            "caption": "black"
+            "caption": "Nucleus"
         },
         {
             "src": "ww.png",
-            "caption": "black"
+            "caption": "Wildwood"
         },
         {
             "src": "ww-color.png",
-            "caption": "black"
+            "caption": "Wildwood color"
+        },
+        {
+            "src": "expert-message-group.png",
+            "caption": "Expert Message Group"
         },
         {
             "src": "core.png",
-            "caption": "orange"
+            "caption": "Core"
         }
     ]
 }

@@ -1,18 +1,33 @@
 --- 
 title: Branding
 layout: base
+description: Examples of branding and logo work. 
 ---
 
 <div class="grid-wide grid-subgrid grid-tight">
-
-{{ test }}
-{% for example in examples %}  
-    <div class="grid-item-4">
-        <figure>
-            <img src="/_assets/img/branding/{{ example.src }}" alt="{{ example.caption }}" />
-            
-        </figure>
+    <section class="grid-item-6">    
+        <h1>Branding &amp; Identity</h1>
+        <p>
+            Logos, branding, and identity work from the last 15 years.
+        </p>
+    </section>
     </div>
-{% endfor %}
+    {% for example_big in examples_big %}  
+        <div class="grid-item-4">
+            <figure>
+                <img src="/_assets/img/branding/{{ example_big.src }}" alt="{{ example.caption }}" />            
+            </figure>
+        </div>
+    {% endfor %}
+
+    <div class="grid-item-6 grid-offset-2 grid-subgrid">
+        {% for example in examples %}
+            <div class="grid-item-3">
+                <figure>
+                    <img src="/_assets/img/branding/{{ example.src }}" alt="{{ example.caption }}" />            
+                </figure>
+            </div>
+        {% endfor %}
+    </div>
 
 </div>
