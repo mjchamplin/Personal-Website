@@ -7,7 +7,6 @@ module.exports = function(eleventyConfig) {
 
   // Load nav plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  
 
   // Drafts, see also _data/eleventyDataSchema.js
   eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
