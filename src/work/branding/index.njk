@@ -1,0 +1,18 @@
+--- 
+title: Branding
+layout: base
+---
+
+<div class="grid-wide grid-subgrid grid-tight">
+
+{{ test }}
+{% for example in examples %}  
+    <div class="grid-item-4">
+        <figure>
+            <img src="/_assets/img/branding/{{ example.src }}" alt="{{ example.caption }}" />
+            
+        </figure>
+    </div>
+{% endfor %}
+
+</div>

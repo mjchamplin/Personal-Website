@@ -1,0 +1,48 @@
+{
+    "examples": [
+        {
+            "src": "space.png",
+            "caption": "black"
+        },
+        {
+            "src": "stone-soup.png",
+            "caption": "black"
+        },
+        {
+            "src": "goodgirls.png",
+            "caption": "black"
+        },
+        {
+            "src": "kinfolk.png",
+            "caption": "black"
+        },
+        {
+            "src": "long-beach.png",
+            "caption": "black"
+        },
+        {
+            "src": "minum.png",
+            "caption": "black"
+        },
+        {
+            "src": "mm.png",
+            "caption": "black"
+        },
+        {
+            "src": "nucleus.png",
+            "caption": "black"
+        },
+        {
+            "src": "ww.png",
+            "caption": "black"
+        },
+        {
+            "src": "ww-color.png",
+            "caption": "black"
+        },
+        {
+            "src": "core.png",
+            "caption": "orange"
+        }
+    ]
+}
