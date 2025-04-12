@@ -8,7 +8,7 @@
     "start": "npm-run-all build:sass --parallel watch:*",
     "watch:sass": "sass --watch src/_sass:build/_assets/css",
     "build:sass": "sass src/_sass:build/_assets/css",
-    "watch:eleventy": "eleventy --serve",
+    "watch:eleventy": "eleventy --serve --port=8081",
     "build:eleventy": "eleventy",
     "build": "npm-run-all build:*"
   },
