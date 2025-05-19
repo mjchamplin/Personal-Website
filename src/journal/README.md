@@ -1,9 +1,7 @@
 # Journal template front matter
 `layout`:
-
-   `post` is appropriate for most things. It's somewhat narrow, but requires no additional formatting or html structure. You can feed it basic markdown and it'll spit out a blog post.
-
-   `post-big` is good for photo posts or any post that wants to use the full width of the site container. It requires html structure since the content won't have any containers. See any of the posts in  /photo-archive for examples.
+- `post` is appropriate for most things. It's somewhat narrow, but requires no additional formatting or html structure. You can feed it basic markdown and it'll spit out a blog post.
+- `post-big` is good for photo posts or any post that wants to use the full width of the site container. It requires html structure since the content won't have any containers. See any of the posts in  /photo-archive for examples.
 
 `title`
 Self-explanatory. A title for the post, which is used as the title on the individual post page and in the archive.
