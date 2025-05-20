@@ -1,7 +1,7 @@
 ---
 layout: post-big
 title: "Dust Storm"
-description: "A few weeks ago I took a meandering solo road trip"
+description: "I do some of my best thinking on long drives."
 date: 2025-05-25 14:00:00
 thumbnail: /_assets/img/journal/dust-storm.jpg
 alttext: "A page from a journal with a watercolor of a desert scene at dusk. We see mountains and the sky awash in golden light, the sun low on the horizon. A translucent brown cloud encroaches on the scene from the right, beginning to block out the sun. A handwritten caption on the right of the frame reads Dust Storm, US 90 outside Marathon, Texas, 4-18-25"
