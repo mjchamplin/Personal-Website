@@ -128,9 +128,11 @@ button, .button
 	padding: 1rem 2rem
 	cursor: pointer
 	transition: background-color 300ms
+	margin: 0 1rem 1rem 0
 	&.small
 		padding: .5rem 1rem
-
+	@media only screen and (min-width: 1200px)
+		margin: 0 1rem 0 0
 button:hover, .button:hover
 	color: $white //#2d63c8
 	border: 1px solid $black
@@ -156,6 +158,13 @@ button:hover, .button:hover
 		max-width: 544px
 	a 
 		text-decoration: none
+
+#feed
+	padding: 2em 0
+	border-top: 1px solid $black 
+	ion-icon 
+		vertical-align: -2px
+		margin-right: .375rem
 
 // -- headers & nav
 
@@ -401,10 +410,6 @@ footer
 			opacity: .3
 		[aria-current="page"]
 			font-weight: bold
-	#feed 
-		ion-icon 
-			vertical-align: -2px
-			margin-right: .375rem
 
 .list // Archive list page
 	ul 
