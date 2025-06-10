@@ -7,7 +7,7 @@ description: 'Michael Champlin is a product designer and researcher in Dallas, T
 
 
 <section id="intro" class="grid-item-4 grid-offset-2">
-  <p>I’m Michael, a multidisciplinary designer in Texas. As a product design consultant with 15 years experience in research and execution, I help brands and causes tell stories using design and technology.</p>
+  <p>I’m Michael, a multidisciplinary designer currently based in Texas. As a product design consultant with 15 years experience in research and execution, I help brands and causes tell stories using design and technology.</p>
 </section>
 <div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
 <section class="grid-item-4 grid-offset-2">
