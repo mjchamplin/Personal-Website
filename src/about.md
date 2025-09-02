@@ -12,7 +12,7 @@ eleventyNavigation:
 </div>
 
 <div class="grid-item-4 grid-align-middle">
-    <p class="big-p">I’m Michael, a creative guy in Dallas, Texas. I'm passionate about solving problems and telling stories.</p> 
+    <p class="big-p">I’m Michael, a creative guy in Portland, Oregon. I'm passionate about solving problems and telling stories.</p> 
     <p class="big-p">I care about human beings, and I'm fiercely devoted to making the world a more accessible, inclusive, empathetic place.</p>
 </div>
 
