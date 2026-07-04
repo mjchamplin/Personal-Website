@@ -6,11 +6,14 @@ layout: base
 
 <div class="grid-wide">
 
+<div class="callout">
+🎨&nbsp;&nbsp;Messy art journaling workshop: <a href="/workshops/messy-art/">click here!</a>
+
+</div>
+
 I do a lot of things! I'm not sure I've attempted to collect them in one place before. This is that attempt! 
 
 *A work in progress, always.*
-
-You can find protest posters [here!](https://app.box.com/s/qj8simk11pnlrd8yw0rkq5ue9s4mye3f)
 
 </div>
 
