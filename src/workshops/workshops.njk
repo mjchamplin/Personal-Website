@@ -1,0 +1,46 @@
+---
+layout: base
+title: Workshops
+description: Workshops and such.
+slug: workshops
+eleventyExcludeFromCollections: ["workshops"]
+---
+
+<div class="grid-item-6 grid-offset-2">
+    <h1>Workshops</h1>
+    <p>Upcoming Workshops</p>
+</div>
+
+<section class="grid-item-6 grid-offset-2 grid-subgrid">
+    {% for post in collections.workshops %}
+        <article class="story grid-item-3">
+            <a href="{{ post.url }}" >
+                {% if post.data.thumbnail %}
+                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.description }}" class="post-thumbnail"/>
+                {% else %}
+                    <img src="/_assets/img/story-thumbnail.png" alt="{{ post.data.description }}" class="post-thumbnail"/>
+                {% endif %}
+            </a>
+            </div>
+            <div class="grid-item-4">
+                <h2>
+                    {% if post.data.original.url %}
+                        <a href="{{ post.data.original.url }}" target="_blank">{{ post.data.title }}<ion-icon name='open-outline'></ion-icon></a>
+                    {% else %}
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    {% endif %}
+                </h2>
+                {% if post.data.original.title %}
+                    <p class="original">
+                        {{ post.data.original.title }}, <time datetime="{{ post.date | shortDate }}">{{ post.data.original.date | postDate }}</time>
+                    </p>
+                {% endif %}
+                {% if post.data.description %}
+                    <p>
+                        {{ post.data.description }}
+                    </p>
+                {% endif %}
+            </div>
+        </article>
+    {% endfor %}
+</section>
