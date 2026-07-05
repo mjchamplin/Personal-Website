@@ -662,3 +662,42 @@ footer
 	background-color: #f7d2e6
 	padding: 2rem
 	margin: 0 0 2rem
+
+
+
+.title-block 
+	border: solid 1.5px $gray80
+	background-color: #F4F1EB
+	margin: 2rem 0
+	.row
+		width: 100%
+		display: grid
+		grid-template-columns: 1fr 3fr
+		gap: 4rem 32px
+		padding: 1rem
+		border-bottom: solid 1.5px #656565
+		font-family: $sans
+		.label
+			font-weight: 400
+			font-size: 1rem
+			letter-spacing: 0.14em
+			text-transform: uppercase
+			color: #656565
+			grid-column-end: span 1
+		.content
+			font-weight: 400
+			font-size: 20px
+			color: #656565
+			grid-column-end: span 1	
+	.row-wide
+		width: 100%
+		display: grid
+		grid-template-columns: 1fr
+		border-bottom: solid 1.5px #656565		
+		padding: 1rem
+	.button
+		width: 100%
+		border: 1.5px solid #656565
+		text-align: center
+	.row:last-child, .row-wide:last-child
+		border-bottom: none
