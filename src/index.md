@@ -7,7 +7,7 @@ description: 'Michael Champlin is a product designer and researcher in Portland,
 
 
 <section id="intro" class="grid-item-4 grid-offset-2">
-  <p>I’m Michael, a multidisciplinary designer <em>&amp;</em> artist based in Portland, Oregon. I host and facilitate workshops to help people get in touch with their most authentic and creative selves. I also help brands and causes tell stories using design and technology.</p>
+  <p>I’m Michael, a multidisciplinary designer <em>&amp;</em> artist based in Portland, Oregon. I host and facilitate <a href="workshops">workshops</a> to help people get in touch with their most authentic and creative selves. I also help brands and causes tell stories using design and technology.</p>
 </section>
 <div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
 <section class="grid-item-4 grid-offset-2">
