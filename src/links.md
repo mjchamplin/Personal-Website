@@ -5,7 +5,7 @@ layout: base
 <div class="grid-item-4 grid-offset-3 grid-subgrid">
 <div class="grid-wide">
     <div class="callout">
-        🎨&nbsp;&nbsp;Messy art journaling workshop: <a href="/workshops/messy-art/">click here!</a>
+        🎨&nbsp;&nbsp;Looking for info on Workshops? <a href="/workshops">Click here!</a>
     </div>
 
 I do a lot of things! I'm not sure I've attempted to collect them in one place before. This is that attempt! 
