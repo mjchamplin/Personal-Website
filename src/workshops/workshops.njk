@@ -5,13 +5,32 @@ description: Workshops and such.
 slug: workshops
 eleventyExcludeFromCollections: ["workshops"]
 ---
-
-<div class="grid-item-6 grid-offset-2">
-    <h1>Workshops</h1>
-    <p>Past Workshops</p>
-</div>
-
+<div class="grid-wide grid-subgrid">
+    <section class="grid-wide">
+        <h1>Workshops</h1>
+    </section>
+    <div class="grid-item-3">
+        <figure>
+            <img src="/_assets/img/workshops/michael.jpeg" alt="slug" />            
+        </figure>
+    </div>
+<section class="grid-item-4 grid-align-middle">
+    <p class="big-p">I host and facilitate workshops to help people and teams get in touch with their most authentic and creative selves. With over ten years in consulting, I've seen it all.</p>
+</section>
+<div class="rule grid-item-5 grid-offset-1 grid-gutter-slug"></div>
 <section class="grid-item-6 grid-offset-2 grid-subgrid">
+    <div class="grid-wide">
+        <h2>Upcoming Workshops</h2>
+        <p>
+            Nothing yet! Watch this space or <a href="">sign up for updates</a>.
+        </p>
+    </div>
+</section>
+
+<section class="grid-item-6 grid-offset-2 grid-subgrid grid-tight">
+    <div class="grid-wide">
+        <h2>Past Workshops</h2>
+    </div>
     {% for post in collections.workshops %}
         <article class="story grid-item-3">
             <a href="{{ post.url }}" >
@@ -21,8 +40,6 @@ eleventyExcludeFromCollections: ["workshops"]
                     <img src="/_assets/img/story-thumbnail.png" alt="{{ post.data.description }}" class="post-thumbnail"/>
                 {% endif %}
             </a>
-            </div>
-            <div class="grid-item-4">
                 <h2>
                     {% if post.data.original.url %}
                         <a href="{{ post.data.original.url }}" target="_blank">{{ post.data.title }}<ion-icon name='open-outline'></ion-icon></a>
@@ -40,7 +57,7 @@ eleventyExcludeFromCollections: ["workshops"]
                         {{ post.data.description }}
                     </p>
                 {% endif %}
-            </div>
         </article>
     {% endfor %}
 </section>
+</div>
